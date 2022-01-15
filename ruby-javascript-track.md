@@ -9,3 +9,5 @@ https://launchschool.com/gists/6e78d0cf
 ## What Will the Impact Be to My Career?. 
 
 By learning ruby and javascript, by will become polyglot,  which will help me better understand new languages and keep up to date on software development. Having this understanding of ruby ann javascript  will allow me  to have a stronger understanding if fundamentals of programming which will then allow me to learn even faster.
+
+

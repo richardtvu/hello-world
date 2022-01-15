@@ -1,3 +1,3 @@
 # README #
 
-Hello world. This is a modification of the read me so that I can practice som version control.
+I consider myself a new programmer and new to ruby,it therefore I will take my time through the **Programming with Ruby** book and the **assignments**.

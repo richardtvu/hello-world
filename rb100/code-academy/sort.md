@@ -25,7 +25,7 @@ I think that for each of the items x,y in the array, `arr`, sort the array such 
 
 What is the Ruby combined comparison operator? https://www.codecademy.com/learn/learn-ruby/modules/learn-ruby-blocks-and-sorting-u/cheatsheet
 
-The `<=>`operator will return:
+The `<=>`operator will return:  
 - 0 when the first object id equal to the second object. e.g. `1<=>1`
 - 1 when the first object is greater than the second object. e.g. `2<=>1`
 - -1 when the first object is less then the secondary.`6<=>9`

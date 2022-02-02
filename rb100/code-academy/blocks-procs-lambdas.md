@@ -63,11 +63,28 @@ ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
 # Add your code below!
 
 under_100 = Proc.new { | number | number < 100 }
+
+youngsters = ages.select(&under_100)
+puts youngsters
 ```
 
 
 ```rb
 
+crew = {
+  captain: "Picard",
+  first_officer: "Riker",
+  lt_cdr: "Data",
+  lt: "Worf",
+  ensign: "Ro",
+  counselor: "Troi",
+  chief_engineer: "LaForge",
+  doctor: "Crusher"
+}
+
+first_half = lambda{| role, person | person < "M"}
+a_to_m = crew.select(&first_half)
+puts a_to_m
 ```
 
 

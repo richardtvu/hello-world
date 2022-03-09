@@ -32,3 +32,8 @@ end
 
 p break_value # returns 1. 
 ```
+
+How can you write large numbers that makes them easier to read? 
+
+- You can go to the [Literals section](https://ruby-doc.org/core-2.5.1/doc/syntax/literals_rdoc.html#:~:text=forms%20are%20preferred.)-,Numbers%C2%B6%20%E2%86%91,-You%20can%20write) of the ruby documentation.
+- You can place the underscore at any spot in the number.

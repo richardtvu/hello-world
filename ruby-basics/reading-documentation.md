@@ -35,5 +35,21 @@ p break_value # returns 1.
 
 How can you write large numbers that makes them easier to read? 
 
-- You can go to the [Literals section](https://ruby-doc.org/core-2.5.1/doc/syntax/literals_rdoc.html#:~:text=forms%20are%20preferred.)-,Numbers%C2%B6%20%E2%86%91,-You%20can%20write) of the ruby documentation.
+- You can go to the [Literals section](https://docs.ruby-lang.org/en/master/doc/syntax/literals_rdoc.html.) of the ruby documentation.
 - You can place the underscore at any spot in the number.
+
+
+How can you write a Symbol to represent your name?
+- Find the class [Symbol documentation](https://docs.ruby-lang.org/en/master/doc/syntax/literals_rdoc.html#label-Symbol+Literals). 
+- The documentation says that you can create a symbol by putting a colon in front of whatever word you want to make a symbol, e.g. `:Richard`.
+
+How do you find the class documentation for the String class?
+- Go to where the core documentation is, e.g. such as https://ruby-doc.org/core-3.1.1/
+- Scroll down to the classes section and then find the String class.
+- https://ruby-doc.org/core-3.1.1/String.html
+
+How do you find out how to right justify a String object?
+- Go to the [String](https://ruby-doc.org/core-3.1.1/String.html) documentation
+- Search for "right just".
+- Find the method `rjust`.
+

@@ -2,6 +2,9 @@
 
 https://launchschool.com/exercise_sets/ece1c62b
 
+
+## What's My Value? (Part 1-5)
+
 ```rb
 a = 7
 
@@ -54,6 +57,24 @@ my_value(a)
 puts a
 ```
 
-I would expect that strings are immutable so the puts would print "Xyzzy". BUT that's not the case. 
+Initial Attempt: I would expect that strings are immutable so the puts would print "Xyzzy". 
 
-https://ruby-doc.org/core-2.7.5/String.html#method-i-5B-5D
+Solution: It turns out that the ` b[2] = '-'` does modify the value of referenced by `a`. Why?
+
+The `b[2] =` is a reassignment, so it would correspond to instance method, `[]=` in the [Ruby docs](https://ruby-doc.org/core-2.7.5/String.html#method-i-5B-5D). Based on the documentation, the character at the second index would be replaced with `-`. The variables A and B both have a pointer to the same string object. The solution says that strings are changeable, so thus why when we change the value of the string object reference to by b, we're also able to see the change when we reference a. 
+
+```rb
+a = "Xyzzy"
+
+def my_value(b)
+  b = 'yzzyX'
+end
+
+my_value(a)
+puts a
+```
+
+I think that the `b = 'yzzyX'` would first create a new string object with the value of `'yzzyX'` and then store a reference to this string object in `b`. Consequently, or the value of `a` would still be `"Xyzzy"`. Therefore, the code will print `Xyzzy`. 
+
+The solution says that assignment always makes a new object and store the reference to the object in the variable. 
+

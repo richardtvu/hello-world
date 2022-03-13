@@ -78,3 +78,75 @@ I think that the `b = 'yzzyX'` would first create a new string object with the v
 
 The solution says that assignment always makes a new object and store the reference to the object in the variable. 
 
+## What's My Value? (Part 6-10)
+
+```rb
+a = 7
+
+def my_value(b)
+  b = a + a
+end
+
+my_value(a)
+puts a
+```
+
+Attempt: I believe that the code will print 7 because reassignment would simply point variable b to a new integer instead of changing the value that variable a is pointing to. Furthermore, this re-assignment is happening in method scope so variable a would not be effective anyways.
+
+Solution: The code will actually print out an error.
+
+Why? The variable a is not accessible within the method my_value has its own scope.
+
+```rb
+a = 7
+array = [1, 2, 3]
+
+array.each do |element|
+  a = element
+end
+
+puts a
+
+```
+
+I initially thought that blocks would have their own inner scope, so that the block could access variable a, but would not be able to change the value of a in the outer scope. So my initial answer was 7.
+
+However, I've learned that blocks can access and also modify the references are variables initialized outside of blocks. **Thus the solution is 3.**
+
+This finding raised doubts for me and I was unsure of whether blocks do have their inner scope. What I did initialize a variable within the block and then see if I can print the variable. 
+
+```rb
+array.each do |element|
+  a = element
+  b = element
+end
+
+puts a
+puts b
+```
+
+The `puts b` will raise an error that the local variable was not defined. Therefore, I think that blocks have your inner scope and can access variables and modify variables in their outside scope. However, the outside scope can not access the variable defined within the block itself.
+
+
+```ruby
+array = [1, 2, 3]
+
+array.each do |element|
+  a = element
+end
+
+puts a
+
+```
+The `array.each` is initializing a variable `a` abd assigning the current element for each iteration. However, we have established that blocks have an inner scope that is inaccessible from the outer scope. Therefore the `puts a` cannot access the value of `a`. Consequently, the program will raise an error that variable `a` was undefined.
+
+```ruby
+a = 7
+array = [1, 2, 3]
+
+array.each do |a|
+  a += 1
+end
+
+puts a
+```

@@ -150,3 +150,30 @@ end
 
 puts a
 ```
+
+
+The program will print 7.
+
+Why?
+
+The solution says that the block argument, `a`, is **shadowing** the outer `a`, i.e. preventing the block from being able to access the `a` defined in the outer scope. 
+
+When we use the `| |` to pass in an argument, I think the block is initializing a new local variable, `a`. Thus, the variable `a` in the `.each` block is not the same variable as the `a` declared in the outer scope. Therefore, the loop will not affect the variable `a` declared in the outer scope.
+
+
+```ruby
+a = 7
+array = [1, 2, 3]
+
+def my_value(ary)
+  ary.each do |b|
+    a += b
+  end
+end
+
+my_value(array)
+puts a
+
+```
+
+The program will raise an error because `a` has neither been passed into the method `my_value` nor has `my_value` declared a local variable `a`. Since methods have their own scope, `ary.each` cannot see `a`. 

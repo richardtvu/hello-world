@@ -177,3 +177,14 @@ puts a
 ```
 
 The program will raise an error because `a` has neither been passed into the method `my_value` nor has `my_value` declared a local variable `a`. Since methods have their own scope, `ary.each` cannot see `a`. 
+
+I love another solution from another student:
+
+```rb
+numbers = []
+
+while numbers.size <= 5
+  numbers << (1..99).to_a.sample
+  puts numbers if numbers.size == 5
+end
+```

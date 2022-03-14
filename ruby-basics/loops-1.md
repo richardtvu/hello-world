@@ -113,3 +113,22 @@ I also learned that the shift method will get the first element remove it from t
 
 He gets my follow! I'm excited to see more solutions from Nghia. 
 
+## Greet Your Friends
+
+Today, I learned about the syntax for a for-loop to iterate through an array: 
+
+```rb
+for value in object do
+  puts value
+end
+```
+
+e.g. 
+
+```rb
+
+groupies = ["Yaz", "Bau", "Tym"]
+for friend in groupies
+  puts "Hello, #{friend}!"
+end
+```

@@ -83,3 +83,33 @@ end
 
 numbers.each {| number | puts number}
 ```
+
+## Count Up
+
+```rb
+
+count = 0
+until count > 10
+  puts count
+  count += 1
+end
+
+```
+
+## print-until.rb
+
+Here is a beautiful solution that I love because of the novelty and the beauty. Credit goes to Nghia N (https://github.com/nghian95):
+
+```rb
+numbers = %w(7 9 13 25 18)
+until numbers.size == 0
+  puts numbers.shift
+end
+```
+
+Today, I learned that size is an alias for length. An alias is another name for this same method.
+
+I also learned that the shift method will get the first element remove it from the array and then return the element. Therefore, the puts numbers.shift will take remove the first element of the array and pass the element to the puts method to print on each iteration.
+
+He gets my follow! I'm excited to see more solutions from Nghia. 
+

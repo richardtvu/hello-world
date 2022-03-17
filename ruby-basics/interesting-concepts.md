@@ -9,4 +9,5 @@
 3. `#odd?` 
 4. `#zero?`
 5. `#between?` https://launchschool.com/exercises/f1616791
-
+6. `<<`
+7. `#empty?`

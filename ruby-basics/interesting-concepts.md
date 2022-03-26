@@ -11,3 +11,6 @@
 5. `#between?` https://launchschool.com/exercises/f1616791
 6. `<<`
 7. `#empty?`
+8. `#flatten`
+9. `#include?`
+10. `Array#[start..end]`

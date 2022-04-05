@@ -23,5 +23,6 @@
 - [x] https://launchschool.com/exercises/84be81eb
 - [x] Block vs. method scoping - https://launchschool.com/exercises/d1fc410d
 - [x] https://launchschool.com/exercises/6f2f69b0
-- [ ] Print Something 2 - Try using an alternative way to declare an array. https://launchschool.com/exercises/3dbafdd6  
-- [ ] 
+- [x] Print Something 2 - Try using an alternative way to declare an array. https://launchschool.com/exercises/3dbafdd6  
+- x] Return tricky #: https://launchschool.com/exercises/79e15f12
+- [ ] https://launchschool.com/exercises/f8f49d6a (Current)

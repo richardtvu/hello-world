@@ -25,4 +25,5 @@
 - [x] https://launchschool.com/exercises/6f2f69b0
 - [x] Print Something 2 - Try using an alternative way to declare an array. https://launchschool.com/exercises/3dbafdd6  
 - x] Return tricky #: https://launchschool.com/exercises/79e15f12
-- [ ] Selecting multiple elements from array in one expression https://launchschool.com/exercises/fea51eb2
+- [x] Selecting multiple elements from array in one expression https://launchschool.com/exercises/fea51eb2
+- [x] Hash merging issues: https://launchschool.com/exercises/bf72d39c
